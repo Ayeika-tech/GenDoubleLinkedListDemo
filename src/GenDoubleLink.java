@@ -1,7 +1,6 @@
 
 /**
-   The DLinkedList class implements a doubly 
-   Linked list. 
+  Lab 9 Generic Double linked list
 */
 
 class DLinkedList<T> {
@@ -221,8 +220,8 @@ class DLinkedList<T> {
 
     public T set(int index, T element) {
 
-        if (index < 0 || index > size())
-            throw new IllegalArgumentException();
+        if (index < 0 || index > size()) //Throw exception if out of bound
+            throw new IndexOutOfBoundsException();
 
             int i = 0;
             Node tempNode = first;
